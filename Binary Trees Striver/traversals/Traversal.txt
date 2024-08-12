@@ -1,0 +1,9 @@
+There are main 2 ways to traverse a Binary tree:
+
+(DFS Traversal)
+1) Preorder traversal   (Root Left Right)
+2) Inorder traversal    (Left Root Right)
+3) Postorder traversal  (Left Right Root)
+
+(BFS Traversal)
+Level Order Traversal   (Nodes are printed in the order of the levels.)

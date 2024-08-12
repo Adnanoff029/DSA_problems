@@ -1,0 +1,40 @@
+STL -> Standard Template Library
+Parts -> * Containers
+         * Algorithms
+         * Iterators
+         * Functions
+
+CONTAINERS -> (a) Sequential -> * Vectors
+                                * Stack     
+                                * Queue   
+                                * Pair(Not a container)
+              (b) Ordered -> * Maps
+                             * Multimap
+                             * Set 
+                             * Multiset
+              (c) Unordered -> * Unordered Map
+                               * Unordered Set
+
+Nested Containers -> * vector<vector<int>>
+                     * map<int, vector<int>>
+                     * set<pair<int,string>>
+                     * vector<map<int, set<int>>>
+
+ITERATORS -> * Point to memory address of Containers.
+             * begin(),end()
+             * vector<int>::iterator it;(Declaring an iterator)
+             * Continuity of containers.
+
+ALGORITHMS -> * Upper bound
+              * Lower Bound
+              * Sort (comparator)
+              * max_element
+              * min_element
+              * accumulate
+              * reverse
+              * count
+              * find
+              * next_permutations
+              * prev_permutations
+
+FUNCTIONS -> CLasses which act as functions.

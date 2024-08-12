@@ -1,0 +1,44 @@
+Hashing is a methocd of searching keys just like linear and binary search.
+Linear Search -> O(n)
+Binary Search -> O(logn) (Here the keys must be in sorted order.)
+Hashing -> O(1)
+
+Drawback -> Huge space is consumed for Hash Tables.
+
+Keys values are mapped on the indices of the hash table.
+
+In order to calculate the index for a particular key in hash table, hash function is used.
+eg. -> h(x) = x, h(x) = x%10 etc.
+
+For hash function h(x) = x is called as ideal hashing.
+For ideal hashing a lot of space is required i.e. if a key value of 1000 is present the the hash table must also have an index with value 1000.
+In order to solve the above problem we modify the hash function. Eg-> h(x) = x%10.
+But on modifying the hash function,there may be a case where more than one keys will have the same index in hash table, this is known as collosion.
+
+In order to solve the collision we have two main methods:
+1- Open Hashing
+2- Closed Hashing
+
+Open Hashing:- The sapce is more than required to store all the keys in the hash table.
+      a) Chaining
+
+Closed Hashing:- The space is exactly enough to hold all the keys in the hash table.
+      a) Open Adderessing
+            i) Linear Probing
+            ii) Quadratic Probing
+            iii) Double Hashing
+
+
+
+In chaining the hash table size is less than the value of greatest key. (h(x) = x%10)
+If two keys have the same index in the hash table. Then they are stored through linked lists with keys being stored in ascending oreder.
+
+Analysis of hashing is done on the basis of loading factor.
+Loading Factor(lambda) = No. of keys / Size of the hash table
+
+Time for avg. successful search = 1(for hash index of the key to be searched) + (lambda/2);
+Time for avg. unsuccessful search = 1(for hash index of the key to be searched) + (lambda);
+
+Deletion is just like deleting a node from linked list.
+Selection of the hash funtion is done in such a way that the distribution of the keys are done uniformly throught the hash table.
+

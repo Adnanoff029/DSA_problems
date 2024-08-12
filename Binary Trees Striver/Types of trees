@@ -1,0 +1,16 @@
+Types:
+1) Full Binary tree: 
+    * Each node has either 0 or 2 children.
+
+2) Complete Binary tree: 
+    * All levels are completely filled except the last one.
+    * All nodes in the last level have nodes from leftwards without any empty spaces.
+
+3) Perfect Binary tree:
+    * All leaf nodes are at the same level.
+
+4) Balanced Binary tree:
+    * Height of tree is at max log(N). (N -> no. of nodes)
+
+5) Degenerate Binary Tree:
+    * Tree is the form of a single line downwards (either left or right).

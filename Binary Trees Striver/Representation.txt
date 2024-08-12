@@ -1,0 +1,24 @@
+It is represented as a user derfined data type (let's say Node):
+
+Members: 1) data (type: int)
+         2) Left (type: Node || NULL)
+         3) Right (type: Node || NULL)
+
+Could be coded as: 
+    struct Node {
+        int data;
+        struct Node* left;
+        struct Node* right;
+        Node(int v)
+        {
+            data = v;
+            left = right = NULL;
+        }
+    }
+Note: We can also create a class for a particular node.
+
+Initialized as:     
+    struct Node* root = new Node(1);
+    root->left = new Node(2);
+    root->right = new Node(3);
+
